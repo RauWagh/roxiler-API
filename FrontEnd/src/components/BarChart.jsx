@@ -1,11 +1,10 @@
-// components/BarChart.jsx
 import React from 'react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, CartesianGrid } from 'recharts';
-import "./Barchart.css"
+import "./Barchart.css";
 
 const TransactionBarChart = ({ data }) => {
   return (
-    <BarChart width={500} height={300} data={data}>
+    <BarChart width={800} height={400} data={data}> {/* Adjusted size */}
       <XAxis dataKey="name" />
       <YAxis />
       <Tooltip />
